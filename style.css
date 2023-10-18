@@ -3,11 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+.container {
+    margin-left: 20em;
+    box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.1);
+}
 form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.1);
     justify-content: center;
     padding: 50px;
 }
@@ -87,6 +91,9 @@ button:hover {
     justify-content: space-between;
     gap: 15px;
 }
+.btn2:hover {
+    opacity: 0.4;
+}
 .btn1,
 .btn2 {
     padding: 10px 5px;
@@ -111,8 +118,51 @@ button:hover {
 .question {
     font-size: 20px;
 }
-span {
+#in {
     color: #f2796e;
     cursor: pointer;
     font-weight: bold;
+}
+#message {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    position: relative;
+    width: 300px;
+    top: -40em;
+    left: 20em;
+    border-radius: 10px;
+    padding: 20px;
+    /* margin-bottom: -10em; */
+}
+#message p {
+    padding: 10px 35px;
+    font-size: 20px;
+    
+}
+.valid {
+   color: green;
+}
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+} 
+.invalid {
+    color: red;
+}
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+.bi-eye-slash {
+    margin-left: -65px;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+#toggleEye2 {
+    margin-left: 16.5em;
 }
